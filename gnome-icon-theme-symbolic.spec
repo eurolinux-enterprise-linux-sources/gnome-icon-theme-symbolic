@@ -1,7 +1,7 @@
 Summary: Symbolic GNOME icons
 Name: gnome-icon-theme-symbolic
 Version: 3.8.2.2
-Release: 1%{?dist}
+Release: 2%{?dist}
 #VCS: git:git://git.gnome.org/gnome-icon-theme-symbolic
 Source0: http://download.gnome.org/sources/gnome-icon-theme-symbolic/3.8/%{name}-%{version}.tar.xz
 License: CC-BY-SA
@@ -43,6 +43,9 @@ gtk-update-icon-cache %{_datadir}/icons/gnome &>/dev/null || :
 %{_datadir}/pkgconfig/gnome-icon-theme-symbolic.pc
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 3.8.2.2-2
+- Mass rebuild 2013-12-27
+
 * Tue May 14 2013 Richard Hughes <rhughes@redhat.com> - 3.8.2.2-1
 - Update to 3.8.2.2
 
